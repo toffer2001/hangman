@@ -98,7 +98,9 @@ var checkAnswer = function(letter) {
         userGuesses.push(letter);
         guessesRemainingCounter--;
         console.log("INCORRECT.  You have " + guessesRemainingCounter + " guesses remaining!");
+        console.log("So far you have guessed the following incorrect letters: " + userGuesses);
         console.log(placeholder.join(""));
+        
     }
     else {
         for (var j = 0; j < n; j++) {
